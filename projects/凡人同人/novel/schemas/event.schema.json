@@ -1,0 +1,134 @@
+{
+  "$defs": {
+    "KnowledgeChange": {
+      "additionalProperties": false,
+      "properties": {
+        "character": {
+          "title": "Character",
+          "type": "string"
+        },
+        "learns": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Learns",
+          "type": "array"
+        }
+      },
+      "required": [
+        "character"
+      ],
+      "title": "KnowledgeChange",
+      "type": "object"
+    },
+    "NarrativePosition": {
+      "additionalProperties": false,
+      "properties": {
+        "chapter": {
+          "title": "Chapter",
+          "type": "string"
+        },
+        "scene": {
+          "minimum": 1,
+          "title": "Scene",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "chapter",
+        "scene"
+      ],
+      "title": "NarrativePosition",
+      "type": "object"
+    },
+    "StoryTime": {
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "start": {
+          "title": "Start",
+          "type": "string"
+        },
+        "end": {
+          "title": "End",
+          "type": "string"
+        }
+      },
+      "required": [
+        "date",
+        "start",
+        "end"
+      ],
+      "title": "StoryTime",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "minLength": 1,
+      "title": "Id",
+      "type": "string"
+    },
+    "story_time": {
+      "$ref": "#/$defs/StoryTime"
+    },
+    "narrative_position": {
+      "$ref": "#/$defs/NarrativePosition"
+    },
+    "location": {
+      "title": "Location",
+      "type": "string"
+    },
+    "participants": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Participants",
+      "type": "array"
+    },
+    "summary": {
+      "title": "Summary",
+      "type": "string"
+    },
+    "causes": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Causes",
+      "type": "array"
+    },
+    "effects": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Effects",
+      "type": "array"
+    },
+    "knowledge_changes": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/KnowledgeChange"
+      },
+      "title": "Knowledge Changes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "story_time",
+    "narrative_position",
+    "location",
+    "summary"
+  ],
+  "title": "EventEntry",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

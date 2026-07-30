@@ -1,0 +1,147 @@
+{
+  "$defs": {
+    "ClueEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "truth": {
+          "title": "Truth",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/ClueStatus"
+        },
+        "planted": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ClueMoment"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "progress": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/ClueMoment"
+          },
+          "title": "Progress",
+          "type": "array"
+        },
+        "planned_payoff": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PlannedPayoff"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "payoff": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ClueMoment"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "known_by": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Known By",
+          "type": "array"
+        },
+        "reader_knows": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Reader Knows",
+          "type": "array"
+        },
+        "must_not_reveal_before": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Must Not Reveal Before"
+        }
+      },
+      "required": [
+        "id",
+        "truth",
+        "status"
+      ],
+      "title": "ClueEntry",
+      "type": "object"
+    },
+    "ClueMoment": {
+      "additionalProperties": false,
+      "properties": {
+        "chapter": {
+          "title": "Chapter",
+          "type": "string"
+        },
+        "change": {
+          "title": "Change",
+          "type": "string"
+        }
+      },
+      "required": [
+        "chapter",
+        "change"
+      ],
+      "title": "ClueMoment",
+      "type": "object"
+    },
+    "ClueStatus": {
+      "enum": [
+        "PLANNED",
+        "PLANTED",
+        "PROGRESSING",
+        "PAID_OFF",
+        "ABANDONED"
+      ],
+      "title": "ClueStatus",
+      "type": "string"
+    },
+    "PlannedPayoff": {
+      "additionalProperties": false,
+      "properties": {
+        "chapter_range": {
+          "title": "Chapter Range",
+          "type": "string"
+        }
+      },
+      "required": [
+        "chapter_range"
+      ],
+      "title": "PlannedPayoff",
+      "type": "object"
+    }
+  },
+  "items": {
+    "$ref": "#/$defs/ClueEntry"
+  },
+  "type": "array",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "clue"
+}

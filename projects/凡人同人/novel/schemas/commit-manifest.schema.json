@@ -1,0 +1,370 @@
+{
+  "$defs": {
+    "CanonEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/CanonStatus"
+        },
+        "statement": {
+          "minLength": 1,
+          "title": "Statement",
+          "type": "string"
+        },
+        "dependencies": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Dependencies",
+          "type": "array"
+        },
+        "known_by": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Known By",
+          "type": "array"
+        },
+        "evidence": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "statement"
+      ],
+      "title": "CanonEntry",
+      "type": "object"
+    },
+    "CanonStatus": {
+      "enum": [
+        "CANON",
+        "PLANNED",
+        "RUMOR",
+        "SECRET",
+        "RETIRED",
+        "UNKNOWN"
+      ],
+      "title": "CanonStatus",
+      "type": "string"
+    },
+    "CharacterUpdate": {
+      "additionalProperties": false,
+      "properties": {
+        "character_id": {
+          "title": "Character Id",
+          "type": "string"
+        },
+        "location": {
+          "title": "Location",
+          "type": "string"
+        },
+        "emotional": {
+          "title": "Emotional",
+          "type": "string"
+        },
+        "goals": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Goals",
+          "type": "array"
+        },
+        "knowledge_add": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Knowledge Add",
+          "type": "array"
+        }
+      },
+      "required": [
+        "character_id",
+        "location",
+        "emotional"
+      ],
+      "title": "CharacterUpdate",
+      "type": "object"
+    },
+    "ClueStatus": {
+      "enum": [
+        "PLANNED",
+        "PLANTED",
+        "PROGRESSING",
+        "PAID_OFF",
+        "ABANDONED"
+      ],
+      "title": "ClueStatus",
+      "type": "string"
+    },
+    "ClueUpdate": {
+      "additionalProperties": false,
+      "properties": {
+        "clue_id": {
+          "title": "Clue Id",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/ClueStatus"
+        },
+        "chapter": {
+          "title": "Chapter",
+          "type": "string"
+        },
+        "change": {
+          "title": "Change",
+          "type": "string"
+        }
+      },
+      "required": [
+        "clue_id",
+        "status",
+        "chapter",
+        "change"
+      ],
+      "title": "ClueUpdate",
+      "type": "object"
+    },
+    "EventEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "story_time": {
+          "$ref": "#/$defs/StoryTime"
+        },
+        "narrative_position": {
+          "$ref": "#/$defs/NarrativePosition"
+        },
+        "location": {
+          "title": "Location",
+          "type": "string"
+        },
+        "participants": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Participants",
+          "type": "array"
+        },
+        "summary": {
+          "title": "Summary",
+          "type": "string"
+        },
+        "causes": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Causes",
+          "type": "array"
+        },
+        "effects": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Effects",
+          "type": "array"
+        },
+        "knowledge_changes": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/KnowledgeChange"
+          },
+          "title": "Knowledge Changes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "story_time",
+        "narrative_position",
+        "location",
+        "summary"
+      ],
+      "title": "EventEntry",
+      "type": "object"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "chapter": {
+          "title": "Chapter",
+          "type": "string"
+        },
+        "location": {
+          "title": "Location",
+          "type": "string"
+        }
+      },
+      "required": [
+        "chapter",
+        "location"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "KnowledgeChange": {
+      "additionalProperties": false,
+      "properties": {
+        "character": {
+          "title": "Character",
+          "type": "string"
+        },
+        "learns": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Learns",
+          "type": "array"
+        }
+      },
+      "required": [
+        "character"
+      ],
+      "title": "KnowledgeChange",
+      "type": "object"
+    },
+    "NarrativePosition": {
+      "additionalProperties": false,
+      "properties": {
+        "chapter": {
+          "title": "Chapter",
+          "type": "string"
+        },
+        "scene": {
+          "minimum": 1,
+          "title": "Scene",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "chapter",
+        "scene"
+      ],
+      "title": "NarrativePosition",
+      "type": "object"
+    },
+    "StoryTime": {
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "start": {
+          "title": "Start",
+          "type": "string"
+        },
+        "end": {
+          "title": "End",
+          "type": "string"
+        }
+      },
+      "required": [
+        "date",
+        "start",
+        "end"
+      ],
+      "title": "StoryTime",
+      "type": "object"
+    },
+    "WorkflowStage": {
+      "enum": [
+        "IDEA",
+        "BIBLE_APPROVED",
+        "OUTLINE_APPROVED",
+        "CHAPTER_PLANNED",
+        "DRAFTED",
+        "CONTINUITY_PASSED",
+        "STORY_PASSED",
+        "STYLE_PASSED",
+        "HUMAN_APPROVED",
+        "CANON_COMMITTED"
+      ],
+      "title": "WorkflowStage",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "chapter_id": {
+      "title": "Chapter Id",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/WorkflowStage"
+    },
+    "summary": {
+      "title": "Summary",
+      "type": "string"
+    },
+    "events": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/EventEntry"
+      },
+      "title": "Events",
+      "type": "array"
+    },
+    "canon_changes": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/CanonEntry"
+      },
+      "title": "Canon Changes",
+      "type": "array"
+    },
+    "character_updates": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/CharacterUpdate"
+      },
+      "title": "Character Updates",
+      "type": "array"
+    },
+    "clue_updates": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/ClueUpdate"
+      },
+      "title": "Clue Updates",
+      "type": "array"
+    }
+  },
+  "required": [
+    "chapter_id",
+    "status",
+    "summary"
+  ],
+  "title": "CommitManifest",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}
