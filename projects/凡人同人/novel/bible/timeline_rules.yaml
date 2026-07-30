@@ -1,4 +1,88 @@
 {
-  "calendar": "UNKNOWN",
-  "travel_minutes": {}
+  "status": "G01_CANDIDATE",
+  "candidate_only": true,
+  "formalization_gate": "仅在作者批准 G01 后，由 G02 调用 chapter-committer 提交 CH000",
+  "calendar": "RELATIVE_CAUSAL_LEDGER",
+  "calendar_note": "原著未给可用绝对历法。CH000 事件的 ISO 日期只是跨时空因果账本序号，不代表仙界公历或事件在同一世界历法中的绝对先后。",
+  "time_model": {
+    "objective_world_time": "记录事件发生于第一时间线、穿越点、远古第二阶段、现世交汇或终战；绝对年份保持 UNKNOWN。",
+    "causal_ledger_time": "用于机器校验原因不得晚于结果；跨时空穿越按因果生成顺序排列，不冒充绝对世界日历。",
+    "narrative_time": "CH000 只登记基线，不是小说章节叙事顺序；正式叙事顺序由后续章节卡决定。",
+    "knowledge_time": "角色只有在亲历、观察、推断或被告知后才能获得知识；作者层合同不得写成角色知识。"
+  },
+  "eras": [
+    {
+      "id": "ERA-TL1-FIRST",
+      "name": "第一次时间线",
+      "description": "轮回韩立经历人界、灵界、仙界，建立家庭，遭古或今清理，最终触发穿越。"
+    },
+    {
+      "id": "ERA-XFER",
+      "name": "穿越点",
+      "description": "甘如霜牺牲、甘九真入玉玦、掌天瓶触发、瓶失与父女分离构成不可拆散的因果链。"
+    },
+    {
+      "id": "ERA-TL2-ANCIENT",
+      "name": "远古第二阶段",
+      "description": "轮回韩立落到自身出生前数千万年，战力归零，确认古或今已为时间道祖后改修轮回。"
+    },
+    {
+      "id": "ERA-TL2-MODERN",
+      "name": "现世时间线交汇",
+      "description": "轮回韩立已在历史中存在，现世韩立独立出生并在仙界时期与轮回殿、蛟三及殿主交汇。"
+    },
+    {
+      "id": "ERA-FINAL",
+      "name": "终战",
+      "description": "轮回殿主首次正式成为轮回道祖并参与击杀古或今；项目结局不得取代现世韩立。"
+    }
+  ],
+  "must_precede": [
+    ["EV-TL1-FAMILY", "EV-TL1-ATTACK"],
+    ["EV-TL1-ATTACK", "EV-TL1-SACRIFICE"],
+    ["EV-TL1-SACRIFICE", "EV-XFER-SEAL"],
+    ["EV-XFER-SEAL", "EV-XFER-TRIGGER"],
+    ["EV-XFER-TRIGGER", "EV-XFER-SPLIT"],
+    ["EV-XFER-SPLIT", "EV-TL2-ANCIENT-LANDING"],
+    ["EV-TL2-ANCIENT-LANDING", "EV-TL2-SWITCH"],
+    ["EV-TL2-SWITCH", "EV-TL2-HALL"],
+    ["EV-TL2-HALL", "EV-TL2-DAUGHTER-FOUND"],
+    ["EV-TL2-DAUGHTER-FOUND", "EV-TL2-INTERSECTION"],
+    ["EV-TL2-MODERN-BIRTH", "EV-TL2-INTERSECTION"],
+    ["EV-TL2-INTERSECTION", "EV-FINAL-DAO"]
+  ],
+  "unknown_relative_order": [
+    {
+      "events": ["EV-TL2-UNDERWORLD", "EV-TL2-HALL"],
+      "rule": "原著未给精确顺序；项目可暂按幽冥阶段先于轮回殿成熟处理，但不得标成 A 类事实。"
+    },
+    {
+      "events": ["EV-TL2-MILUO", "EV-TL2-DAUGHTER-FOUND"],
+      "rule": "绝对年份与间隔 UNKNOWN。"
+    },
+    {
+      "events": ["EV-TL2-DAUGHTER-FOUND", "EV-TL2-MODERN-BIRTH"],
+      "rule": "两者都发生在正式交汇之前；源文档未确认寻回甘九真与现世韩立出生的先后。"
+    }
+  ],
+  "knowledge_rules": [
+    "轮回韩立保有第一次时间线经验，但不因此预知第二时间线的具体选择与偏移。",
+    "甘九真在婴儿封印阶段不具备成熟知情能力；被解封后长期不知道殿主是父亲。",
+    "轮回韩立落地后只知道与女儿失散，不知道甘九真的精确落点。",
+    "现世韩立在正式揭示前不知道轮回殿主与自己是“一时二生”。",
+    "当地修士只能根据可观察状态判断轮回韩立是凡人或低阶修士。",
+    "G00 结局与发布决策属于作者层合同，不进入角色知识。"
+  ],
+  "ability_boundaries": [
+    "穿越后掌天瓶遗失，法宝、功力与可调用战力归零；记忆、道心、百艺及肉身神魂底蕴的保留度分别保持 PLANNED/UNKNOWN。",
+    "古或今已经是时间道祖后，轮回韩立不得沿时间主道抢先成祖；改修轮回的功法来源和斩断方式保持 C/D。",
+    "轮回能力不得成为无代价复活术，不得绕过资源、承载、暴露与因果成本。",
+    "六道轮回盘的来源、铸造者、六道胚和完整能力树保持 PLANNED/UNKNOWN。",
+    "轮回殿主正式成为轮回道祖只能发生在终战。"
+  ],
+  "identity_boundaries": [
+    "轮回殿主与现世韩立是“一时二生”，不是分身、夺舍、复制体、前世或人格融合。",
+    "甘如霜与南宫婉的人格、记忆及轮回关系不得在缺乏证据时写成夺舍或完整覆盖。",
+    "终战后意识是否进入轮回保持 UNKNOWN；不得确认完整复活。"
+  ]
 }

@@ -1,0 +1,459 @@
+{
+  "chapter_id": "CH000",
+  "status": "STYLE_PASSED",
+  "summary": "项目级正史与双时间线基线候选；非小说正文。仅在作者批准 G01 后，才允许 G02 使用 chapter-committer 提交。",
+  "events": [
+    {
+      "id": "EV-TL1-ASCENT",
+      "story_time": {"date": "0001-01-01", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 1},
+      "location": "第一次时间线·人界至仙界",
+      "participants": ["轮回韩立"],
+      "summary": "轮回韩立经历人界、灵界与仙界，并把时间法则修至足以威胁古或今的层次。",
+      "causes": [],
+      "effects": ["第一时间线形成时间大道威胁"],
+      "knowledge_changes": [{"character": "轮回韩立", "learns": ["第一时间线的修行经历"]}]
+    },
+    {
+      "id": "EV-TL1-FAMILY",
+      "story_time": {"date": "0001-01-02", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 2},
+      "location": "第一次时间线·仙界",
+      "participants": ["轮回韩立", "甘如霜", "甘九真"],
+      "summary": "轮回韩立与甘如霜结为道侣，二人育有甘九真。",
+      "causes": ["EV-TL1-ASCENT"],
+      "effects": ["形成父女逃亡与牺牲的关系前提"],
+      "knowledge_changes": []
+    },
+    {
+      "id": "EV-TL1-ATTACK",
+      "story_time": {"date": "0001-01-03", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 3},
+      "location": "第一次时间线·仙界战场",
+      "participants": ["轮回韩立", "甘如霜", "古或今"],
+      "summary": "古或今为清理时间大道威胁而来，父女逃亡进入不可逆阶段。",
+      "causes": ["EV-TL1-ASCENT", "EV-TL1-FAMILY"],
+      "effects": ["甘如霜牺牲"],
+      "knowledge_changes": [{"character": "轮回韩立", "learns": ["古或今已把自己视为必须清理的威胁"]}]
+    },
+    {
+      "id": "EV-TL1-SACRIFICE",
+      "story_time": {"date": "0001-01-04", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 4},
+      "location": "第一次时间线·仙界战场",
+      "participants": ["轮回韩立", "甘如霜", "甘九真", "古或今"],
+      "summary": "甘如霜为掩护父女逃亡牺牲，并把部分轮回力量留给甘九真。",
+      "causes": ["EV-TL1-ATTACK"],
+      "effects": ["甘九真需被封入玉玦", "轮回韩立失去道侣"],
+      "knowledge_changes": [{"character": "轮回韩立", "learns": ["甘如霜已牺牲"]}]
+    },
+    {
+      "id": "EV-XFER-SEAL",
+      "story_time": {"date": "0001-01-05", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 5},
+      "location": "穿越点·启动前",
+      "participants": ["轮回韩立", "甘九真"],
+      "summary": "轮回韩立在穿越启动前把甘九真封入玉玦仙器。",
+      "causes": ["EV-TL1-SACRIFICE"],
+      "effects": ["甘九真以封印状态进入穿越"],
+      "knowledge_changes": [{"character": "轮回韩立", "learns": ["女儿已被封入玉玦"]}]
+    },
+    {
+      "id": "EV-XFER-TRIGGER",
+      "story_time": {"date": "0001-01-06", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 6},
+      "location": "穿越点·掌天瓶",
+      "participants": ["轮回韩立", "甘九真"],
+      "summary": "轮回韩立把时间法则力量灌入掌天瓶，使其孕育瓶灵并首次真正逆转时空；穿越涉及时间、空间和轮回，精确耦合机制保持 UNKNOWN。",
+      "causes": ["EV-XFER-SEAL"],
+      "effects": ["掌天瓶遗失", "父女分离", "轮回韩立战力归零"],
+      "knowledge_changes": [{"character": "轮回韩立", "learns": ["自己已启动无法完全控制的真正穿越"]}]
+    },
+    {
+      "id": "EV-XFER-SPLIT",
+      "story_time": {"date": "0001-01-07", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 7},
+      "location": "光阴长河",
+      "participants": ["轮回韩立", "甘九真"],
+      "summary": "掌天瓶遗失于穿越，父女被抛入相距极远的时代。",
+      "causes": ["EV-XFER-TRIGGER"],
+      "effects": ["父女长期失散", "轮回韩立落入远古", "甘九真落点接近现世韩立时代"],
+      "knowledge_changes": [{"character": "轮回韩立", "learns": ["掌天瓶已无法使用", "与女儿失散", "目前无法定位女儿"]}]
+    },
+    {
+      "id": "EV-TL2-ANCIENT-LANDING",
+      "story_time": {"date": "0001-01-08", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 8},
+      "location": "远古第二阶段·偏远小门派",
+      "participants": ["轮回韩立"],
+      "summary": "轮回韩立落到自身出生前以千万年计的古代，法宝、功力和可调用战力尽失，成为凡人并重修。",
+      "causes": ["EV-XFER-SPLIT"],
+      "effects": ["必须依赖现实资源重修"],
+      "knowledge_changes": [{"character": "轮回韩立", "learns": ["自己身在极其久远的古代", "战力与法宝已归零"]}]
+    },
+    {
+      "id": "EV-TL2-SWITCH",
+      "story_time": {"date": "0001-01-09", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 9},
+      "location": "远古第二阶段",
+      "participants": ["轮回韩立", "古或今"],
+      "summary": "轮回韩立确认古或今已经是时间道祖，放弃时间主道并改修轮回；功法来源和斩断方式保持 UNKNOWN。",
+      "causes": ["EV-TL2-ANCIENT-LANDING"],
+      "effects": ["轮回道途开始"],
+      "knowledge_changes": [{"character": "轮回韩立", "learns": ["古或今已是时间道祖", "时间主道不可重走"]}]
+    },
+    {
+      "id": "EV-TL2-UNDERWORLD",
+      "story_time": {"date": "0001-01-10", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 10},
+      "location": "幽冥界",
+      "participants": ["轮回韩立", "血厉", "冥王", "鬼巫"],
+      "summary": "工作顺序候选：轮回韩立以转轮王身份参与封印血厉，后杀冥王、鬼巫并掌控幽冥多域；其与正式建殿的精确顺序仍非 A 类事实。",
+      "causes": ["EV-TL2-SWITCH"],
+      "effects": ["形成幽冥身份与势力基础"],
+      "knowledge_changes": []
+    },
+    {
+      "id": "EV-TL2-HALL",
+      "story_time": {"date": "0001-01-11", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 11},
+      "location": "仙界诸域",
+      "participants": ["轮回韩立"],
+      "summary": "轮回韩立在改修后达到大罗巅峰并建立轮回殿；组织成熟过程和与幽冥阶段的精确顺序保留 PLANNED。",
+      "causes": ["EV-TL2-SWITCH"],
+      "effects": ["形成对抗天庭、联系弥罗和培养蛟三的组织基础"],
+      "knowledge_changes": []
+    },
+    {
+      "id": "EV-TL2-MILUO",
+      "story_time": {"date": "0001-01-12", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 12},
+      "location": "真言门相关区域",
+      "participants": ["轮回韩立", "弥罗"],
+      "summary": "轮回韩立邀请弥罗加入轮回殿，弥罗拒绝，真言门最终仍被天庭覆灭。",
+      "causes": ["EV-TL2-HALL"],
+      "effects": ["真言门覆灭结果不变"],
+      "knowledge_changes": [{"character": "弥罗", "learns": ["轮回殿的邀请"]}]
+    },
+    {
+      "id": "EV-TL2-DAUGHTER-FOUND",
+      "story_time": {"date": "0001-01-13", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 13},
+      "location": "接近现世韩立时代",
+      "participants": ["轮回韩立", "甘九真"],
+      "summary": "轮回韩立漫长等待后找到并解封甘九真，培养其以蛟三身份活动，但长期不与其相认。",
+      "causes": ["EV-XFER-SPLIT", "EV-TL2-HALL"],
+      "effects": ["蛟三进入轮回殿体系", "父女关系继续保密"],
+      "knowledge_changes": [{"character": "轮回韩立", "learns": ["已寻回女儿"]}, {"character": "甘九真", "learns": ["自己以蛟三身份活动"]}]
+    },
+    {
+      "id": "EV-TL2-MODERN-BIRTH",
+      "story_time": {"date": "0001-01-13", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 14},
+      "location": "第二时间线·人界",
+      "participants": ["现世韩立"],
+      "summary": "轮回韩立已真实存在于历史中后，现世韩立作为独立个体出生；二者不是复制、替代或融合。",
+      "causes": ["EV-TL2-ANCIENT-LANDING"],
+      "effects": ["一时二生的第二个主体进入历史"],
+      "knowledge_changes": [{"character": "现世韩立", "learns": []}]
+    },
+    {
+      "id": "EV-TL2-INTERSECTION",
+      "story_time": {"date": "0001-01-15", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 15},
+      "location": "第二时间线·仙界",
+      "participants": ["轮回韩立", "现世韩立", "甘九真"],
+      "summary": "现世韩立在仙界时期与轮回殿、蛟三和殿主交汇，后期揭示“一时二生”；此前必须维持隐藏。",
+      "causes": ["EV-TL2-DAUGHTER-FOUND", "EV-TL2-MODERN-BIRTH"],
+      "effects": ["一时二生秘密进入有限知情范围"],
+      "knowledge_changes": [{"character": "现世韩立", "learns": ["轮回殿主与自己是一时二生"]}]
+    },
+    {
+      "id": "EV-FINAL-DAO",
+      "story_time": {"date": "0001-01-16", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 16},
+      "location": "终战战场",
+      "participants": ["轮回韩立", "现世韩立", "古或今"],
+      "summary": "轮回殿主在终战借六道轮回盘首次正式成为轮回道祖，并参与击杀古或今。",
+      "causes": ["EV-TL2-INTERSECTION", "EV-TL2-HALL"],
+      "effects": ["古或今被击杀", "现世韩立保留终局主角地位"],
+      "knowledge_changes": [{"character": "终战参与者", "learns": ["轮回殿主已成为轮回道祖"]}]
+    },
+    {
+      "id": "EV-FINAL-HANDOFF",
+      "story_time": {"date": "0001-01-17", "start": "00:00:00", "end": "00:00:01"},
+      "narrative_position": {"chapter": "CH000", "scene": 17},
+      "location": "终战与克制尾声",
+      "participants": ["轮回韩立", "现世韩立"],
+      "summary": "原著锚点要求轮回韩立以自身牺牲参与终战；G00 进一步批准把最终胜机留给现世韩立，并以克制开放尾声处理意识状态，不确认人格完整延续或复活。",
+      "causes": ["EV-FINAL-DAO"],
+      "effects": ["轮回韩立意识状态保持 UNKNOWN"],
+      "knowledge_changes": []
+    }
+  ],
+  "canon_changes": [
+    {
+      "id": "ORIG-HL-IDENTITY-001",
+      "name": "一时二生身份",
+      "status": "CANON",
+      "statement": "轮回殿主与现世韩立是时空穿梭形成的一时二生，不是分身、夺舍、复制体、前世或人格融合。",
+      "dependencies": ["ORIG-BOTTLE-TRIGGER-001"],
+      "known_by": ["轮回韩立"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§4.1 L175—188；§5 H01；原著索引 1305—1306"}]
+    },
+    {
+      "id": "ORIG-HL-FIRST-LIFE-001",
+      "name": "第一次时间线经历",
+      "status": "CANON",
+      "statement": "轮回韩立也经历人界、灵界和仙界，并在第一次时间线把时间法则修到足以威胁古或今。",
+      "dependencies": [],
+      "known_by": ["轮回韩立", "古或今"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H02—H03；原著索引 1306"}]
+    },
+    {
+      "id": "ORIG-FAMILY-001",
+      "name": "甘如霜与甘九真",
+      "status": "CANON",
+      "statement": "甘如霜是轮回韩立的道侣，甘九真是二人之女。",
+      "dependencies": ["ORIG-HL-FIRST-LIFE-001"],
+      "known_by": ["轮回韩立", "甘如霜", "甘九真"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H04；原著索引 1305—1306"}]
+    },
+    {
+      "id": "ORIG-RUSHUANG-SACRIFICE-001",
+      "name": "甘如霜牺牲",
+      "status": "CANON",
+      "statement": "甘如霜为掩护父女逃亡牺牲，并把部分轮回力量留给甘九真。",
+      "dependencies": ["ORIG-FAMILY-001"],
+      "known_by": ["轮回韩立", "甘如霜", "古或今"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H05；§6.2；原著索引 1306"}]
+    },
+    {
+      "id": "ORIG-JIUZHEN-SEAL-001",
+      "name": "甘九真入玉玦",
+      "status": "CANON",
+      "statement": "甘九真在穿越启动前被封入玉玦仙器。",
+      "dependencies": ["ORIG-RUSHUANG-SACRIFICE-001"],
+      "known_by": ["轮回韩立"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H06；§6.3；原著索引 1306"}]
+    },
+    {
+      "id": "ORIG-BOTTLE-TRIGGER-001",
+      "name": "掌天瓶触发真正穿越",
+      "status": "CANON",
+      "statement": "轮回韩立把全部时间法则力量、时间道纹与法则晶丝灌入掌天瓶，使掌天瓶孕育瓶灵并首次真正逆转时空。",
+      "dependencies": ["ORIG-JIUZHEN-SEAL-001"],
+      "known_by": ["轮回韩立"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H07—H08；§9.1；原著索引 1306"}]
+    },
+    {
+      "id": "ORIG-XFER-THREE-LAWS-001",
+      "name": "穿越涉及三类至尊法则",
+      "status": "CANON",
+      "statement": "真正穿越涉及时间、空间乃至轮回，不只是单纯时间倒流。",
+      "dependencies": ["ORIG-BOTTLE-TRIGGER-001"],
+      "known_by": ["轮回韩立"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H09；原著索引 1306"}]
+    },
+    {
+      "id": "UNKNOWN-XFER-MECHANISM-001",
+      "name": "穿越跨法则精确机制",
+      "status": "UNKNOWN",
+      "statement": "时间、空间、轮回三类力量如何共同造成穿越失控尚未确定，不作为当前 A 类事实。",
+      "dependencies": ["ORIG-XFER-THREE-LAWS-001"],
+      "known_by": [],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H09 与 §10 建议语气；G01 调研降级"}]
+    },
+    {
+      "id": "ORIG-BOTTLE-LOSS-001",
+      "name": "掌天瓶遗失",
+      "status": "CANON",
+      "statement": "掌天瓶在真正穿越中遗失于光阴长河。",
+      "dependencies": ["ORIG-BOTTLE-TRIGGER-001"],
+      "known_by": ["轮回韩立"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H10；§9.1；原著索引 1306"}]
+    },
+    {
+      "id": "ORIG-FATHER-DAUGHTER-SPLIT-001",
+      "name": "父女跨时代分离",
+      "status": "CANON",
+      "statement": "轮回韩立与甘九真在穿越中分离；轮回韩立落入远古，甘九真落到接近现世韩立的年代，父亲落地时不知道女儿的精确落点。",
+      "dependencies": ["ORIG-BOTTLE-TRIGGER-001", "ORIG-JIUZHEN-SEAL-001"],
+      "known_by": ["轮回韩立"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H11—H13；原著索引 1306"}]
+    },
+    {
+      "id": "ORIG-ANCIENT-LANDING-001",
+      "name": "远古落地",
+      "status": "CANON",
+      "statement": "轮回韩立落到自身出生前以千万年计的古老时代；绝对年份未知。",
+      "dependencies": ["ORIG-FATHER-DAUGHTER-SPLIT-001"],
+      "known_by": ["轮回韩立"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H12；原著索引 1306"}]
+    },
+    {
+      "id": "ORIG-POWER-RESET-001",
+      "name": "战力归零与重修",
+      "status": "CANON",
+      "statement": "穿越后法宝、功力与可调用战力尽失，轮回韩立成为凡人并投身偏远小门派重修。",
+      "dependencies": ["ORIG-ANCIENT-LANDING-001", "ORIG-BOTTLE-LOSS-001"],
+      "known_by": ["轮回韩立"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H14—H15；§8.2；原著索引 1306"}]
+    },
+    {
+      "id": "UNKNOWN-RETAINED-FOUNDATION-001",
+      "name": "战力归零后的保留底蕴",
+      "status": "UNKNOWN",
+      "statement": "轮回韩立保留多少记忆、道心、百艺、肉身与神魂底蕴须分别设计，不得由战力归零反推完整保留。",
+      "dependencies": ["ORIG-POWER-RESET-001"],
+      "known_by": ["轮回韩立"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H14 后半段与 §8.2；G01 调研拆分"}]
+    },
+    {
+      "id": "ORIG-GU-ALREADY-DAO-001",
+      "name": "古或今已为时间道祖",
+      "status": "CANON",
+      "statement": "轮回韩立在古代发现古或今已经是时间道祖。",
+      "dependencies": ["ORIG-POWER-RESET-001"],
+      "known_by": ["轮回韩立"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H16；原著索引 1306"}]
+    },
+    {
+      "id": "ORIG-ONE-ANCESTOR-PER-LAW-001",
+      "name": "一法则一位道祖",
+      "status": "CANON",
+      "statement": "同一法则原则上同时只能存在一位道祖，后来者会威胁并可能取代原道祖。",
+      "dependencies": [],
+      "known_by": ["高阶修士"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H18"}]
+    },
+    {
+      "id": "ORIG-SWITCH-REINCARNATION-001",
+      "name": "放弃时间改修轮回",
+      "status": "CANON",
+      "statement": "因古或今已占据时间道祖之位，轮回韩立放弃时间法则主道并改修轮回法则。",
+      "dependencies": ["ORIG-GU-ALREADY-DAO-001", "ORIG-ONE-ANCESTOR-PER-LAW-001"],
+      "known_by": ["轮回韩立"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H17—H18；原著索引 1305—1306"}]
+    },
+    {
+      "id": "ORIG-DALUO-PEAK-001",
+      "name": "终战前大罗巅峰",
+      "status": "CANON",
+      "statement": "轮回韩立在终战正式成祖之前已达到大罗巅峰。",
+      "dependencies": ["ORIG-SWITCH-REINCARNATION-001"],
+      "known_by": ["轮回韩立", "轮回殿高层", "高阶对手"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H19、H30；原著索引 1306—1307、1388"}]
+    },
+    {
+      "id": "ORIG-HALL-001",
+      "name": "建立轮回殿",
+      "status": "CANON",
+      "statement": "轮回韩立建立轮回殿，并以该组织长期对抗天庭。",
+      "dependencies": ["ORIG-SWITCH-REINCARNATION-001"],
+      "known_by": ["轮回殿成员", "天庭"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H19、H22；原著索引 1306—1307"}]
+    },
+    {
+      "id": "ORIG-HEAVEN-COURT-SEVEN-001",
+      "name": "天道七君主导天庭",
+      "status": "CANON",
+      "statement": "天庭由古或今等天道七君主导，是跨仙域统治体系。",
+      "dependencies": [],
+      "known_by": ["仙界高阶势力"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H22；原著索引 1306"}]
+    },
+    {
+      "id": "ORIG-HALL-CAPABILITY-001",
+      "name": "轮回殿跨域组织能力",
+      "status": "CANON",
+      "statement": "轮回殿最终具备跨域行动、隐秘通信和大规模资源调度能力。",
+      "dependencies": ["ORIG-HALL-001"],
+      "known_by": ["轮回殿成员", "天庭"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H27；原著索引 1136 及相关章节"}]
+    },
+    {
+      "id": "PLANNED-HALL-INSTITUTIONS-001",
+      "name": "轮回殿能力形成机制",
+      "status": "PLANNED",
+      "statement": "跨域行动、隐秘通信和大规模资源调度能力如何通过制度、技术和分层保密形成，由后续阶段设计。",
+      "dependencies": ["ORIG-HALL-CAPABILITY-001"],
+      "known_by": [],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H27 的创作边界"}]
+    },
+    {
+      "id": "ORIG-ZHUANLUNWANG-001",
+      "name": "转轮王与幽冥结果",
+      "status": "CANON",
+      "statement": "轮回韩立曾以转轮王身份参与封印血厉，后杀冥王、鬼巫并掌控幽冥多域。",
+      "dependencies": ["ORIG-SWITCH-REINCARNATION-001"],
+      "known_by": ["幽冥相关势力"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H25—H26；§7.4；原著索引 1282"}]
+    },
+    {
+      "id": "ORIG-MILUO-001",
+      "name": "弥罗邀请与真言门覆灭",
+      "status": "CANON",
+      "statement": "弥罗修炼时间法则至大罗，因威胁时间道祖而遭天庭覆灭；此前轮回韩立曾邀请弥罗加入轮回殿但被拒。",
+      "dependencies": ["ORIG-HALL-001"],
+      "known_by": ["轮回韩立", "弥罗"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H23—H24；§6.6；原著索引 550、1307"}]
+    },
+    {
+      "id": "ORIG-JIUZHEN-JIAOSAN-001",
+      "name": "寻回甘九真并培养蛟三",
+      "status": "CANON",
+      "statement": "轮回韩立后来找到并解封甘九真，培养其以蛟三身份活动，但长期不与其相认。",
+      "dependencies": ["ORIG-FATHER-DAUGHTER-SPLIT-001", "ORIG-HALL-001"],
+      "known_by": ["轮回韩立"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H20—H21；§6.3；原著索引 1305—1307"}]
+    },
+    {
+      "id": "ORIG-CHENTUAN-CONCEAL-001",
+      "name": "古或今与陈抟追踪下的隐藏",
+      "status": "CANON",
+      "statement": "因古或今和预言道祖陈抟追踪，轮回殿主不敢过多接触甘九真与现世韩立。",
+      "dependencies": ["ORIG-HL-IDENTITY-001", "ORIG-JIUZHEN-JIAOSAN-001"],
+      "known_by": ["轮回韩立"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H21；§6.5；原著索引 1306—1307"}]
+    },
+    {
+      "id": "ORIG-SIX-WHEEL-001",
+      "name": "六道轮回盘最小边界",
+      "status": "CANON",
+      "statement": "六道轮回盘与前世记忆、修为、命数相关，使用存在风险，并能辅助轮回殿主在终战突破。",
+      "dependencies": ["ORIG-SWITCH-REINCARNATION-001"],
+      "known_by": ["轮回韩立", "终战相关者"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H28；§9.2；原著索引 1284、1297、1300、1305—1308"}]
+    },
+    {
+      "id": "ORIG-NANGONGWAN-IDENTITY-001",
+      "name": "南宫婉今生人格边界",
+      "status": "CANON",
+      "statement": "南宫婉仍然是南宫婉，只是承载甘如霜的前世记忆和修为；不得写成甘如霜夺舍、替换或完全覆盖。",
+      "dependencies": ["ORIG-FAMILY-001"],
+      "known_by": ["南宫婉", "轮回韩立", "现世韩立"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H29；§10 伦理边界"}]
+    },
+    {
+      "id": "ORIG-FINAL-ANCESTOR-001",
+      "name": "终战成为轮回道祖",
+      "status": "CANON",
+      "statement": "轮回殿主只在最终大战借六道轮回盘正式成为轮回道祖，并以自身牺牲参与击杀古或今。",
+      "dependencies": ["ORIG-DALUO-PEAK-001", "ORIG-SIX-WHEEL-001", "ORIG-HL-IDENTITY-001"],
+      "known_by": ["终战参与者"],
+      "evidence": [{"chapter": "SOURCE-v1.1", "location": "§5 H30—H31；原著索引 1388"}]
+    },
+    {
+      "id": "PLANNED-FINAL-EPILOGUE-001",
+      "name": "克制开放尾声",
+      "status": "PLANNED",
+      "statement": "在原著牺牲锚点之上，项目把最终胜机留给现世韩立；终战后意识状态保持开放，不确认人格完整延续或复活。",
+      "dependencies": ["ORIG-FINAL-ANCESTOR-001"],
+      "known_by": [],
+      "evidence": [{"chapter": "G00", "location": "DEC-G00-ENDING；作者 2026-07-30 ACCEPT_RECOMMENDATION"}]
+    }
+  ],
+  "character_updates": [],
+  "clue_updates": []
+}
