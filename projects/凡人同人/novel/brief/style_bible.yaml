@@ -1,8 +1,14 @@
 {
   "status": "PLANNED",
+  "title": "一时二生：轮回韩立",
   "source": {
     "file": "source/凡人_轮回韩立同人设定集与长篇大纲_v1.1增补版.md",
     "version": "v1.1 增补版"
+  },
+  "g00_author_gate": {
+    "decision": "APPROVED",
+    "date": "2026-07-30",
+    "resolution": "全部八项 DECISION_ID 均为 ACCEPT_RECOMMENDATION"
   },
   "language": "简体中文",
   "genre": [
@@ -14,15 +20,54 @@
     "跨时空智斗"
   ],
   "pov": {
-    "status": "UNKNOWN",
-    "recommended_mode": "以轮回韩立为主的第三人称限知",
+    "status": "APPROVED",
+    "decision_id": "DEC-G00-POV",
+    "mode": "以轮回韩立为中心的第三人称限知",
     "distance": "中近距离",
+    "exception": "仅允许极少量、明确标记的他人限知插章",
     "rules": [
       "只呈现当前 POV 可观察、可推断或确知的信息",
       "不以全知旁白提前确认暗手是否成功",
       "不把第一时间线记忆写成对第二时间线的绝对预言",
       "重要历史回声优先通过遗迹、残卷、制度和人物选择呈现"
     ]
+  },
+  "structure_contract": {
+    "chapter_upper_bound": 430,
+    "upper_bound_not_quota": true,
+    "opening": "4 章短序章，第 5 章进入远古落地",
+    "target_total_chinese_characters": "1900000-2000000",
+    "usual_chapter_chinese_characters": "4400-4700",
+    "length_flexibility": "按剧情需要微调，不凑字数"
+  },
+  "publishing_contract": {
+    "status": "EXTERNAL_CONDITIONAL",
+    "private_until_rights_and_platform_review": true,
+    "preferred_platform_after_review": "起点中文网",
+    "cadence_after_review": "每周六更",
+    "approved_backlog_before_publication": 24,
+    "ai_disclosure": "遵守届时平台要求",
+    "commercialization": "未经授权不得商业化",
+    "recheck_points": [
+      "首次公开当日",
+      "签约当日"
+    ]
+  },
+  "ending_contract": {
+    "decision_id": "DEC-G00-ENDING",
+    "mode": "牺牲式结局与克制开放尾声",
+    "ambiguity_scope": "仅保留意识是否进入轮回的可能",
+    "forbidden": [
+      "确认人格完整延续",
+      "确认完整复活",
+      "取代或融合现世韩立",
+      "抹除原著历史"
+    ]
+  },
+  "originals_contract": {
+    "decision_id": "DEC-G00-ORIGINALS",
+    "rule": "沿用功能骨架和工作暂名，但允许改名、合并或删除",
+    "canon_boundary": "原创名称和落点不得因进入风格文件而升级为原著锚点"
   },
   "tone": [
     "克制",
@@ -72,7 +117,7 @@
     "rules": [
       "不轻易进行长篇演说",
       "情感主要从资源分配、是否救人、是否公开情报和是否承担因果中显露",
-      "面对未知先验证，不因拥有大罗记忆而自负",
+      "面对未知先验证，不因拥有高阶记忆而自负",
       "随着殿主弧推进，语言可从个人得失扩展到组织责任，但保持克制"
     ]
   },
@@ -134,7 +179,7 @@
   },
   "forbidden_patterns": [
     "开局直接恢复大罗战力或仙器库",
-    "把大罗记忆写成全知外挂",
+    "把高阶记忆写成全知外挂",
     "无代价复活或随意保留完整前世人格",
     "连续大段百科式设定说明",
     "用现代科学术语替代仙侠语汇",
@@ -155,10 +200,10 @@
     "本章是否用选择和行动表现主题，而不是直接说理"
   ],
   "unresolved": [
-    "正式 POV 尚待作者批准",
-    "单章目标字数和段落节奏尚待确定",
-    "序章采用 3—5 章还是 8 章尚待确定",
-    "是否保留开放尾声尚待确定",
-    "发布平台可能影响章节长度与敏感内容边界"
+    "穿越落点、偏远宗门和前期原创角色的最终名称",
+    "战力归零后记忆、道心、百艺及肉身神魂底蕴的精确保留边界",
+    "甘如霜与南宫婉的具体轮回机制",
+    "轮回殿主终战后的意识状态",
+    "六道体系、轮盘来源与铸造过程"
   ]
 }
