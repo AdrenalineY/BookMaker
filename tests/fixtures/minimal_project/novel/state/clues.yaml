@@ -1,0 +1,14 @@
+[
+  {
+    "id": "CLUE_001",
+    "truth": "雾铃由旧灯塔中的失踪者名册驱动",
+    "status": "PLANNED",
+    "planted": null,
+    "progress": [],
+    "planned_payoff": {"chapter_range": "CH008-CH010"},
+    "payoff": null,
+    "known_by": [],
+    "reader_knows": [],
+    "must_not_reveal_before": "CH008"
+  }
+]

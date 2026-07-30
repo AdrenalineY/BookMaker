@@ -1,0 +1,6 @@
+{
+  "pov": "第三人称限知",
+  "narrative_distance": "中近距离",
+  "tone": ["克制", "警觉"],
+  "forbidden_patterns": ["空气仿佛凝固", "这一刻他终于明白"]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "CANON_PUBLIC",
+    "name": "午夜封航",
+    "status": "CANON",
+    "statement": "港口每天午夜封航",
+    "dependencies": [],
+    "known_by": ["char_hero", "char_mentor"],
+    "evidence": [{"chapter": "CH000", "location": "项目前置设定"}]
+  },
+  {
+    "id": "CANON_SECRET",
+    "name": "守灯人身份",
+    "status": "SECRET",
+    "statement": "港务长就是失踪的守灯人",
+    "dependencies": ["CANON_PUBLIC"],
+    "known_by": ["char_mentor"],
+    "evidence": []
+  }
+]

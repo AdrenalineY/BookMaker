@@ -1,0 +1,4 @@
+interface:
+  display_name: "长篇大纲规划"
+  short_description: "负责生成因果驱动的全书大纲、分卷闭环、情节线账本与滚动计划"
+  default_prompt: "使用 $outline-planner 规划当前卷的因果大纲。"

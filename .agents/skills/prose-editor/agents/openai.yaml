@@ -1,0 +1,4 @@
+interface:
+  display_name: "文笔诊断与修订"
+  short_description: "负责依据 Style Bible 先结构化诊断，再只修复作者明确批准的问题"
+  default_prompt: "使用 $prose-editor 诊断 CH001 的行文问题，不要改写。"

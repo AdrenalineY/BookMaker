@@ -1,0 +1,4 @@
+interface:
+  display_name: "线索伏笔管理"
+  short_description: "负责管理线索种植、推进、误导、兑现、作废以及角色和读者防泄露边界"
+  default_prompt: "使用 $clue-manager 检查未兑现伏笔和泄露风险。"

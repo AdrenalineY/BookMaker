@@ -1,0 +1,4 @@
+interface:
+  display_name: "章节定稿提交"
+  short_description: "负责通过唯一入口提交人工批准章节，并原子回写摘要、事件、角色和线索状态"
+  default_prompt: "使用 $chapter-committer 检查 CH001 是否满足定稿提交条件。"

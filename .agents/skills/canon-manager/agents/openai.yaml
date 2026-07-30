@@ -1,0 +1,4 @@
+interface:
+  display_name: "正史设定管理"
+  short_description: "负责查询权威正史、分析语义冲突、追踪依赖并生成可审批变更提案"
+  default_prompt: "使用 $canon-manager 检查新设定与现有正史的冲突。"

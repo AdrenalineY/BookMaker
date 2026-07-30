@@ -1,0 +1,9 @@
+[
+  {
+    "from": "char_hero",
+    "to": "char_mentor",
+    "public": "上级",
+    "private": "怀疑",
+    "trust": 35
+  }
+]

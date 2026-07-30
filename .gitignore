@@ -1,0 +1,11 @@
+.tools/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.basedpyright/
+.qa/
+*.pyc
+
+novel/chapters/*/context.md
+novel/reports/**/*.tmp

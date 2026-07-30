@@ -1,0 +1,4 @@
+interface:
+  display_name: "场景上下文组装"
+  short_description: "负责按人物、设定、线索、禁止事项和三层记忆构造有限上下文包"
+  default_prompt: "使用 $context-assembler 为 CH001 生成上下文包。"

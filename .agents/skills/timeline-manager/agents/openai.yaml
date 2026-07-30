@@ -1,0 +1,4 @@
+interface:
+  display_name: "时间线管理"
+  short_description: "负责检查故事时间、叙述位置、因果前置、知识时机与人物移动合理性"
+  default_prompt: "使用 $timeline-manager 审查指定章节的时间线。"

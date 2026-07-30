@@ -1,0 +1,4 @@
+interface:
+  display_name: "人物状态管理"
+  short_description: "负责维护人物卡、有向关系、知识边界、物品与章节结束后的状态变化"
+  default_prompt: "使用 $character-manager 检查人物状态和知识边界。"

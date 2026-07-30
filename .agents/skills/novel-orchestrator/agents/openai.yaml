@@ -1,0 +1,4 @@
+interface:
+  display_name: "小说工作流总控"
+  short_description: "负责判断创作阶段、执行质量门禁并调用专职 Skill"
+  default_prompt: "使用 $novel-orchestrator 判断当前创作阶段并给出下一步。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "连续性审校"
+  short_description: "负责只读检查设定、人物、物品、时间、因果和角色知识边界一致性"
+  default_prompt: "使用 $continuity-reviewer 审校 CH001，不要改正文。"

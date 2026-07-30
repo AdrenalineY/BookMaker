@@ -1,0 +1,15 @@
+{
+  "chapter_id": "CH001",
+  "title": "雾铃叫出了名字",
+  "status": "CHAPTER_PLANNED",
+  "pov": "char_hero",
+  "time": "0001-01-01 08:30-09:10",
+  "locations": ["fog_harbor"],
+  "goal": "确认雾铃是否真的叫出失踪者姓名",
+  "opening_state": "许砚只把雾铃当作设备故障",
+  "ending_state": "许砚决定私自调查旧灯塔",
+  "canon_refs": ["CANON_PUBLIC", "CANON_SECRET"],
+  "clue_refs": ["CLUE_001"],
+  "must_include": ["雾铃第三次响起时叫出许砚父亲的名字"],
+  "must_avoid": ["不得让主角提前知道守灯人的身份"]
+}

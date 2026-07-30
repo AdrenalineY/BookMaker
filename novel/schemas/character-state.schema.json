@@ -1,0 +1,63 @@
+{
+  "$defs": {
+    "CharacterState": {
+      "additionalProperties": false,
+      "properties": {
+        "character_id": {
+          "title": "Character Id",
+          "type": "string"
+        },
+        "location": {
+          "title": "Location",
+          "type": "string"
+        },
+        "physical": {
+          "title": "Physical",
+          "type": "string"
+        },
+        "emotional": {
+          "title": "Emotional",
+          "type": "string"
+        },
+        "inventory": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Inventory",
+          "type": "array"
+        },
+        "goals": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Goals",
+          "type": "array"
+        },
+        "knowledge": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Knowledge",
+          "type": "array"
+        }
+      },
+      "required": [
+        "character_id",
+        "location",
+        "physical",
+        "emotional"
+      ],
+      "title": "CharacterState",
+      "type": "object"
+    }
+  },
+  "items": {
+    "$ref": "#/$defs/CharacterState"
+  },
+  "type": "array",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "character-state"
+}

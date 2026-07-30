@@ -1,0 +1,7 @@
+[
+  {
+    "fact_id": "CANON_SECRET",
+    "known_by": ["char_mentor"],
+    "unknown_to": ["char_hero"]
+  }
+]

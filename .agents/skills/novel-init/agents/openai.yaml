@@ -1,0 +1,4 @@
+interface:
+  display_name: "初始化小说项目"
+  short_description: "负责创建小说目录、结构化数据模板、状态库、示例章节和校验入口"
+  default_prompt: "使用 $novel-init 初始化一个新的小说项目。"

@@ -1,0 +1,11 @@
+[
+  {
+    "character_id": "char_hero",
+    "location": "fog_harbor",
+    "physical": "健康",
+    "emotional": "疑惑",
+    "inventory": ["抄表笔"],
+    "goals": ["完成晨检"],
+    "knowledge": ["CANON_PUBLIC"]
+  }
+]

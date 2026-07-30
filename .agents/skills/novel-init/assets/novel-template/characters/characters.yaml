@@ -1,0 +1,18 @@
+[
+  {
+    "id": "char_hero",
+    "name": "许砚",
+    "role": "主人公",
+    "goals": ["找到守灯人"],
+    "knowledge": ["CANON_PUBLIC"],
+    "voice": {"sentence_length": "偏短", "avoid": ["直接谈论父亲"]}
+  },
+  {
+    "id": "char_mentor",
+    "name": "沈岚",
+    "role": "港务长",
+    "goals": ["阻止许砚靠近灯塔"],
+    "knowledge": ["CANON_PUBLIC", "CANON_SECRET"],
+    "voice": {"sentence_length": "完整", "avoid": ["承认守灯人身份"]}
+  }
+]

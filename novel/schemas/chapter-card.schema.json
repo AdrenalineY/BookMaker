@@ -1,0 +1,107 @@
+{
+  "$defs": {
+    "WorkflowStage": {
+      "enum": [
+        "IDEA",
+        "BIBLE_APPROVED",
+        "OUTLINE_APPROVED",
+        "CHAPTER_PLANNED",
+        "DRAFTED",
+        "CONTINUITY_PASSED",
+        "STORY_PASSED",
+        "STYLE_PASSED",
+        "HUMAN_APPROVED",
+        "CANON_COMMITTED"
+      ],
+      "title": "WorkflowStage",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "chapter_id": {
+      "title": "Chapter Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/WorkflowStage"
+    },
+    "pov": {
+      "title": "Pov",
+      "type": "string"
+    },
+    "time": {
+      "title": "Time",
+      "type": "string"
+    },
+    "locations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Locations",
+      "type": "array"
+    },
+    "goal": {
+      "title": "Goal",
+      "type": "string"
+    },
+    "opening_state": {
+      "title": "Opening State",
+      "type": "string"
+    },
+    "ending_state": {
+      "title": "Ending State",
+      "type": "string"
+    },
+    "canon_refs": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Canon Refs",
+      "type": "array"
+    },
+    "clue_refs": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Clue Refs",
+      "type": "array"
+    },
+    "must_include": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Must Include",
+      "type": "array"
+    },
+    "must_avoid": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Must Avoid",
+      "type": "array"
+    }
+  },
+  "required": [
+    "chapter_id",
+    "title",
+    "status",
+    "pov",
+    "time",
+    "locations",
+    "goal",
+    "opening_state",
+    "ending_state"
+  ],
+  "title": "ChapterCard",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

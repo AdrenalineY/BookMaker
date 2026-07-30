@@ -1,0 +1,38 @@
+{
+  "chapter_id": "CH001",
+  "status": "HUMAN_APPROVED",
+  "summary": "许砚检查异常雾铃，听见失踪父亲的名字，决定调查旧灯塔。",
+  "events": [
+    {
+      "id": "EVT_CH001_01",
+      "story_time": {"date": "0001-01-01", "start": "09:00", "end": "09:05"},
+      "narrative_position": {"chapter": "CH001", "scene": 1},
+      "location": "fog_harbor",
+      "participants": ["char_hero", "char_mentor"],
+      "summary": "雾铃叫出许砚父亲的名字",
+      "causes": [],
+      "effects": ["char_hero.goal=调查旧灯塔"],
+      "knowledge_changes": [
+        {"character": "char_hero", "learns": ["父亲失踪与雾铃有关"]}
+      ]
+    }
+  ],
+  "canon_changes": [],
+  "character_updates": [
+    {
+      "character_id": "char_hero",
+      "location": "fog_harbor",
+      "emotional": "警觉",
+      "goals": ["调查旧灯塔"],
+      "knowledge_add": ["父亲失踪与雾铃有关"]
+    }
+  ],
+  "clue_updates": [
+    {
+      "clue_id": "CLUE_001",
+      "status": "PLANTED",
+      "chapter": "CH001",
+      "change": "雾铃叫出失踪者姓名"
+    }
+  ]
+}
